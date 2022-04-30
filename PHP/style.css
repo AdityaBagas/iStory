@@ -1,0 +1,85 @@
+#rcorners1 {
+    border-radius: 20px;
+    background: white;
+    padding: 0px;
+    width: 100px;
+    height: 100px;
+    float: left;
+    margin: 10px;
+}
+
+.hurufjudul {
+    font-size: 30px;
+    color: grey;
+}
+
+#logo {
+    margin: center;
+    position: relative;
+    top: 5px;
+}
+
+#rcorners2 {
+    border-radius: 20px;
+    background: white;
+    width: 400px;
+    height: 83px;
+    float: right;
+    margin: 10px;
+}
+
+#menu li {
+    float: left;
+    margin: 10px 10px 10px;
+    padding: 10px 10px 10px;
+    list-style: none;
+}
+
+.selected{
+	background: #008FFF;
+	border-radius: 10px;
+}
+
+#rcorners3 {
+    border-radius: 30px;
+    background: #73AD21;
+    height: 500px;
+}
+
+#outter-div {
+    text-align: center;
+}
+
+#outter-div:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    margin-right: -0.25em;
+}
+
+#aligned {
+    display: inline-block;
+    vertical-align: middle;
+    width: 300px;
+}
+
+.image {
+    position: relative;
+    width: 100%;
+}
+
+img 
+{
+	border-radius: 30px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+}
+
+h2 {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+}
