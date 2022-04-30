@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Tq6-7p-9K9">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="iStory" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="First Time Launch Background" translatesAutoresizingMaskIntoConstraints="NO" id="N8D-8U-Iue">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="awp-Kz-1Ps">
+                                <rect key="frame" x="97.5" y="587" width="180" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="180" id="MeH-dq-gT5"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="QoA-yc-wDh"/>
+                                    <constraint firstAttribute="height" constant="50" id="xGD-HD-mQ4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Skip">
+                                    <color key="titleColor" red="0.24311566352844238" green="0.24314942955970764" blue="0.24310415983200073" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="2nn-ku-Nrl" kind="show" id="fw4-Z2-tHR"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ETd-cL-B52">
+                                <rect key="frame" x="97.5" y="522" width="180" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="180" id="8sO-VX-QDk"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="c47-v8-74C"/>
+                                    <constraint firstAttribute="height" constant="50" id="f96-YI-XGG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Sign In">
+                                    <color key="titleColor" red="0.24311566352844238" green="0.24314942955970764" blue="0.24310415983200073" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBorder" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="tjo-f8-Ob1" kind="presentation" id="AtM-TJ-492"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4VB-c9-wd4">
+                                <rect key="frame" x="97.5" y="457" width="180" height="50"/>
+                                <color key="backgroundColor" red="0.24311566352844238" green="0.24314942955970764" blue="0.24310415983200073" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="180" id="ZVU-H2-mUP"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="fVn-g5-loQ"/>
+                                    <constraint firstAttribute="height" constant="50" id="hfo-CN-Pc6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Create an Account">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="y5C-2n-WBK" kind="presentation" id="Olu-u9-btZ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="N8D-8U-Iue" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="0cN-ib-NVV"/>
+                            <constraint firstItem="N8D-8U-Iue" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="8fr-1s-71h"/>
+                            <constraint firstItem="ETd-cL-B52" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9Qr-hV-IOs"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="awp-Kz-1Ps" secondAttribute="bottom" constant="30" id="DyE-9k-a4X"/>
+                            <constraint firstItem="N8D-8U-Iue" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="S1A-6s-HIu"/>
+                            <constraint firstItem="N8D-8U-Iue" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="Tux-BW-48W"/>
+                            <constraint firstItem="ETd-cL-B52" firstAttribute="top" secondItem="4VB-c9-wd4" secondAttribute="bottom" constant="15" id="VdJ-UE-cfs"/>
+                            <constraint firstItem="4VB-c9-wd4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fgP-Dq-6Pt"/>
+                            <constraint firstItem="awp-Kz-1Ps" firstAttribute="top" secondItem="ETd-cL-B52" secondAttribute="bottom" constant="15" id="oSz-uU-2PT"/>
+                            <constraint firstItem="awp-Kz-1Ps" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tA1-Gv-JPR"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="YkD-RC-gif">
+                        <barButtonItem key="backBarButtonItem" title="Cancel" id="a5k-aU-jYK"/>
+                    </navigationItem>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="signInBtnStyle" destination="ETd-cL-B52" id="rsL-pH-DeQ"/>
+                        <outlet property="signUpBtnStyle" destination="4VB-c9-wd4" id="YKG-sX-Xio"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1034" y="109"/>
+        </scene>
+        <!--SignUp-->
+        <scene sceneID="ST0-gH-2Zn">
+            <objects>
+                <viewControllerPlaceholder storyboardName="SignUp" id="y5C-2n-WBK" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VIO-1o-mSn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1600" y="64"/>
+        </scene>
+        <!--SignIn-->
+        <scene sceneID="Xui-nq-Diw">
+            <objects>
+                <viewControllerPlaceholder storyboardName="SignIn" id="tjo-f8-Ob1" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Dsz-Ne-onl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1604" y="108"/>
+        </scene>
+        <!--Skip-->
+        <scene sceneID="T7N-Vq-SGF">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Skip" id="2nn-ku-Nrl" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nOR-eP-g5O" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1614" y="153"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="uFi-zn-NPq">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="Tq6-7p-9K9" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="spR-wT-7jq">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="gqz-Pb-7hb"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="l9W-eF-UoK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="262" y="110"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="First Time Launch Background" width="1125" height="2001"/>
+    </resources>
+</document>
